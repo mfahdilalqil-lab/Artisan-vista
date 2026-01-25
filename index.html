@@ -1,52 +1,71 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<div class="footer-credit">
-  <span>Dikembangkan oleh</span>
+
+<div class="footer-credit-elite">
+  <span>Developed by</span>
   <strong>Kalobtand X Web Studio</strong>
 </div>
 
 <style>
-.footer-credit {
+.footer-credit-elite {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 6px;
-  padding: 28px 16px;
-  font-size: 13px;
+  gap: 8px;
+
+  padding: 32px 20px;
+  margin-top: 60px;
+
+  font-size: 12.5px;
   font-weight: 400;
-  letter-spacing: 0.6px;
-  color: rgba(255, 255, 255, 0.65);
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+
+  color: rgba(255,255,255,0.6);
+
   background: linear-gradient(
-    to right,
-    rgba(255,255,255,0.02),
-    rgba(255,255,255,0.05),
-    rgba(255,255,255,0.02)
+    90deg,
+    rgba(255,255,255,0.01),
+    rgba(255,255,255,0.04),
+    rgba(255,255,255,0.01)
   );
-  border-top: 1px solid rgba(255,255,255,0.08);
+
+  border-top: 1px solid rgba(255,255,255,0.07);
+  backdrop-filter: blur(6px);
 }
 
-.footer-credit strong {
+.footer-credit-elite strong {
   font-weight: 600;
-  color: #ffffff;
+  color: rgba(255,255,255,0.95);
   position: relative;
+  letter-spacing: 1px;
 }
 
-.footer-credit strong::after {
+/* Elite signature line */
+.footer-credit-elite strong::after {
   content: "";
   position: absolute;
-  left: 0;
-  bottom: -4px;
-  width: 100%;
+  left: 50%;
+  bottom: -6px;
+  transform: translateX(-50%);
+  width: 60%;
   height: 1px;
   background: linear-gradient(
     90deg,
     transparent,
-    rgba(255,255,255,0.6),
+    rgba(255,255,255,0.7),
     transparent
   );
 }
+
+/* Micro interaction (super subtle) */
+.footer-credit-elite:hover strong::after {
+  width: 100%;
+  transition: width 0.4s ease;
+}
 </style>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Artisan Vista | 5-Star Dining Experience</title>
